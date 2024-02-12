@@ -1,0 +1,12 @@
+.form{
+    width: 350px;
+    margin: auto;
+}
+
+.form-group{
+    margin: 10px auto;
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
