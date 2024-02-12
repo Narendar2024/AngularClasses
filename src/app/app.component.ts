@@ -11,7 +11,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class AppComponent {
   title = 'RegistrationApp';
 
-  regForm: FormGroup
+  regForm: FormGroup;
+  submitted = false;
 
   constructor(private fb: FormBuilder) {
     this.regForm = this.fb.group({
@@ -28,6 +29,7 @@ export class AppComponent {
   }
   submit() {
     console.log(this.regForm.value);
+    this.submitted = true;
   }
 
 }
